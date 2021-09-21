@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Memes</title>
+    <style>
+        #user-top-text {
+            background-color: pink;
+            width: 80%;
+        }
+        #user-bottom-text {
+            width: 80%
+        }
+        #meme-text {
+            background-color: transparent;
+            font-size: 50px;
+            color: white;
+            position:absolute;
+            font-family: "Impact";
+            text-shadow: black 0px 0px 10px;
+            width: 600px;
+            left: 15px;
+            top: 400px;
+        }
+    </style>
+    <script>memeGen.js</script>
+</head>
+<body>
+    <form>
+    <div>
+        <p>Top text:</p>
+        <input type="url" id="user-top-text" maxlength=”50”
+        placeholder="(Optional)What text do you want at the top of the meme?">
+    </div>
+    <div>
+        <p>Bottom text:</p>
+        <input type="text" id="user-bottom-text" maxlength="50" 
+        placeholder="(Optional)What text do you want at the bottom of the meme?">
+    </div>
+    <div>
+        <p>Attach File</p>
+        <input id="image-file" type="file" accept="image/*">
+    </div>
+    </form>
+    <div id="meme-text">
+        <h3>Example Text</h3>
+        <input type="text" id="user-text" maxlength="70" oninput="update_text()">
+    </div>
+    <div id="meme-picture"><img src="" height="500" width="600"></div>
+</body>
+</html>
